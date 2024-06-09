@@ -118,7 +118,7 @@ for (key in formData){
         }
         break;
     case 'age':
-        if(typeof formData[key] !== 'number' && formData[key] <=100 ){
+        if(typeof formData[key] === 'number' && formData[key] <=100 ){
             data=true;
 
         }    
